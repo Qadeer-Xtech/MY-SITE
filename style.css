@@ -1,0 +1,100 @@
+/* Universal Styles for perfect sizing */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+}
+
+/* Main Page Styles (No Change) */
+.main-container {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20vh;
+}
+.button-group {
+    margin-top: 30px;
+}
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    background-color: #007acc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #005f9e;
+}
+
+/* New Responsive Editor Page Layout */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Puri screen height use karo */
+    padding: 10px;
+    gap: 10px;
+}
+
+.output-container {
+    flex: 1; /* Bachi hui jaga ka 50% le lo */
+    display: flex;
+    flex-direction: column;
+    min-height: 200px; /* Kam se kam height */
+}
+
+.editor-grid, .editor-grid-single {
+    flex: 1; /* Bachi hui jaga ka 50% le lo */
+    display: flex;
+    gap: 10px;
+}
+
+.code-editor {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.code-editor.full-width {
+    flex: 1 1 100%;
+}
+label {
+    font-weight: bold;
+    background-color: #333;
+    padding: 8px 12px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+textarea, iframe {
+    width: 100%;
+    height: 100%;
+    background-color: #252526;
+    border: 1px solid #3c3c3c;
+    color: #d4d4d4;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    padding: 10px;
+    resize: none;
+    border-radius: 0;
+}
+iframe {
+    background-color: white;
+}
+
+/* For Mobile Devices (Important for Responsiveness) */
+@media (max-width: 768px) {
+    .page-container {
+        height: auto; /* Height ko content ke hisab se adjust karo */
+    }
+    .editor-grid {
+        flex-direction: column; /* Editors ko vertical stack karo */
+    }
+}

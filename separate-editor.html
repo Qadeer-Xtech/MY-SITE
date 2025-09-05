@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Separate Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-container">
+        <div class="output-container">
+            <label>Output</label>
+            <iframe id="output-frame"></iframe>
+        </div>
+
+        <div class="editor-grid">
+            <div class="code-editor">
+                <label for="html-code">HTML</label>
+                <textarea id="html-code" placeholder="Yahan HTML likhein..."></textarea>
+            </div>
+            <div class="code-editor">
+                <label for="css-code">CSS</label>
+                <textarea id="css-code" placeholder="Yahan CSS likhein..."></textarea>
+            </div>
+            <div class="code-editor">
+                <label for="js-code">JavaScript</label>
+                <textarea id="js-code" placeholder="Yahan JavaScript likhein..."></textarea>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
