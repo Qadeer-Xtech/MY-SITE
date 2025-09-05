@@ -12,7 +12,7 @@ html, body {
     color: #d4d4d4;
 }
 
-/* Main Page Styles (No Change) */
+/* Main Page Styles */
 .main-container {
     text-align: center;
     padding: 20px;
@@ -36,7 +36,7 @@ html, body {
     background-color: #005f9e;
 }
 
-/* New Responsive Editor Page Layout */
+/* Responsive Editor Page Layout */
 .page-container {
     display: flex;
     flex-direction: column;
@@ -46,14 +46,14 @@ html, body {
 }
 
 .output-container {
-    flex: 1; /* Bachi hui jaga ka 50% le lo */
+    flex: 1.5; /* Screen ka bara hissa (e.g., ~60%) isko do */
     display: flex;
     flex-direction: column;
     min-height: 200px; /* Kam se kam height */
 }
 
 .editor-grid, .editor-grid-single {
-    flex: 1; /* Bachi hui jaga ka 50% le lo */
+    flex: 1; /* Screen ka chota hissa (e.g., ~40%) isko do */
     display: flex;
     gap: 10px;
 }
