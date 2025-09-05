@@ -46,14 +46,14 @@ html, body {
 }
 
 .output-container {
-    flex: 1.5; /* Screen ka bara hissa (e.g., ~60%) isko do */
+    flex: 4; /* YAHAN TABDEELI KI HAI: Output ka weight 4 (Bohat bara hissa) */
     display: flex;
     flex-direction: column;
-    min-height: 200px; /* Kam se kam height */
+    min-height: 200px;
 }
 
 .editor-grid, .editor-grid-single {
-    flex: 1; /* Screen ka chota hissa (e.g., ~40%) isko do */
+    flex: 1; /* Editor ka weight 1 (Bohat chota hissa) */
     display: flex;
     gap: 10px;
 }
@@ -92,9 +92,9 @@ iframe {
 /* For Mobile Devices (Important for Responsiveness) */
 @media (max-width: 768px) {
     .page-container {
-        height: auto; /* Height ko content ke hisab se adjust karo */
+        height: auto;
     }
     .editor-grid {
-        flex-direction: column; /* Editors ko vertical stack karo */
+        flex-direction: column;
     }
 }
